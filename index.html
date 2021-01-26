@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Finanacial Accounting"Hadiyah Form</title>
+  <link rel="stylesheet" href="./style.css">
+  <!-- Bootstrab -->
+  
+</head>
+<body>
+  <div class="container">
+    <header>
+      <img src="https://www.mediashower.com/img/D72D3538-FD05-11E8-8AD7-FFAA5BCEC62F/bigstock-Enterprise-Resource-Planning-E-237501844_600x.jpg" class="center" class="card-img-top" alt="..."><br>
+      <h3 class="center">Finanacial Accounting ERP "Hadiyah Form</h3>
+    </header>
+    <div class="table-wrapper">
+      <table class="table-users">
+        
+        <tr>
+          <th>Function</th>
+          <th>Process</th>
+          <th>Requirment</th>
+          <th>Department</th>
+          <th>Note</th>
+          <th>Edit</th>
+        </tr>
+      </table>
+      <button class="btn btn-add">Add Functin</button>
+    </div>
+    <!-- Add Modal -->
+    <div class="add-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Add New Function</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="functions" placeholder="Function" required>
+            <textarea  name="proc" placeholder="Process" required></textarea>	
+            <textarea name="requirements" placeholder="Requirment" required></textarea>
+            <select name="department" required>
+              <option  value="" disabled="disabled" selected="selected">--إختيار--</option>
+              <option  value="الحسابات">الحسابات</option>
+              <option  value="الموارد البشرية">الموارد البشرية</option>
+              <option  value="تقنية المعلومات" >تقنية المعلومات</option>
+              <option  value="المشتريا">المشتريات</option>
+              <option  value="المخازن">المخازن</option>
+              <option  value="المبيعات">المبيعات</option>
+              <option  value="البرامج" >البرامج</option>
+              <option  value="المصنع">المصنع</option>
+              <option  value="مراقب داخلي">مراقب داخلي</option>
+            </select>
+            <textarea  name="notees" placeholder="Write The process Here" rows="2"></textarea>	
+            <button class="btn btn-modal">Savs</button>
+          </form>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Edit Modal -->
+    <div class="edit-modal modal-wrapper">
+      <div class="modal">
+        <div class="modal-header"><h3>Edit Function</h3></div>
+        <div class="modal-body">
+          <form class="form" autocomplete="off">
+            <input type="text" name="functions" placeholder="Function" required>
+            <textarea  name="proc" placeholder="Process" required></textarea>	
+            <textarea name="requirements" placeholder="Requirment" required></textarea>
+            <select name="department" required>
+              <option  value="" disabled="disabled" selected="selected">--إختيار--</option>
+              <option  value="الحسابات">الحسابات</option>
+              <option  value="الموارد البشرية">الموارد البشرية</option>
+              <option  value="تقنية المعلومات" >تقنية المعلومات</option>
+              <option  value="المشتريا">المشتريات</option>
+              <option  value="المخازن">المخازن</option>
+              <option  value="المبيعات">المبيعات</option>
+              <option  value="البرامج" >البرامج</option>
+              <option  value="المصنع">المصنع</option>
+              <option  value="مراقب داخلي">مراقب داخلي</option>
+            </select>
+            <textarea  name="notees" placeholder="Write The process Here " rows="2" required></textarea>	
+            <button class="btn btn-modal">Save</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
+<script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+  var firebaseConfig = {
+    apiKey: "AIzaSyBUrcuq0cMkpF2OOKz2iyb-1SaIb4hQfB0",
+    authDomain: "hadform-55596.firebaseapp.com",
+    projectId: "hadform-55596",
+    storageBucket: "hadform-55596.appspot.com",
+    messagingSenderId: "987981467848",
+    appId: "1:987981467848:web:89414572d4c87dd863d5fd",
+    measurementId: "G-W6PZZ5P9M8"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+   const db = firebase.firestore();
+  firebase.analytics();
+</script>
+   
+  
+  <script src="./script.js"></script>
+</body>
+</html><script src="https://www.gstatic.com/firebasejs/8.2.4/firebase-firestore.js"></script>
